@@ -15,8 +15,6 @@ public class Tabla {
             }
         }
 
-        Elhelyezes();
-        Megjelenit();
     }
 
     public void UresOszlopokSzama(){
@@ -27,9 +25,8 @@ public class Tabla {
 
     }
 
-    public void Elhelyezes(){
+    public void Elhelyezes(int N){
         Random rnd = new Random();
-        int N = 8;
 
 
         for (int i = 0; i < N; i++) {
