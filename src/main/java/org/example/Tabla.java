@@ -59,15 +59,29 @@ public class Tabla {
         }
     }
 
-    public void Tabla(){
+    public String UresOszlop(int oszlop){
+        boolean van = false;
+        for (int i = 0; i < T.length; i++) {
+            for (int j = 0; j < T.length; j++) {
+                if (T[i][oszlop] == 'K'){
+                    van = true;
+                }
+            }
+        }
 
+        return oszlop + " sor tartalmaz kiralynot: " + van;
     }
 
-    public void UresOszlop(){
+    public String UresSor(int sor){
+        boolean van = false;
+        for (int i = 0; i < T.length; i++) {
+            for (int j = 0; j < T.length; j++) {
+                if (T[sor][j] == 'K'){
+                    van = true;
+                }
+            }
+        }
 
-    }
-
-    public void UresSor(){
-
+        return sor + " sor tartalmaz kiralynot: " + van;
     }
 }
