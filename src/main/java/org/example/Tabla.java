@@ -4,6 +4,7 @@ public class Tabla {
     private int[][] T;
     private char UresCella;
 
+
     public void UresOszlopokSzama(){
 
     }
