@@ -18,11 +18,39 @@ public class Tabla {
     }
 
     public void UresOszlopokSzama(){
-
+        int ures = 0;
+        int db = 0;
+        for (int oszlop = 0; oszlop < T.length; oszlop++) {
+            for (int i = 0; i < T.length; i++) {
+                if (T[i][oszlop] == '#'){
+                    ures++;
+                }
+            }
+            if(ures == 8){
+                db++;
+            }else {
+                ures = 0;
+            }
+        }
+        System.out.println(db + " oszlop teljesen ures.");
     }
 
     public void UresSorokSzama(){
-
+        int ures = 0;
+        int db = 0;
+        for (int j = 0; j < T.length; j++) {
+            for (int sor = 0; sor < T.length; sor++) {
+                if (T[sor][j] == '#'){
+                    ures++;
+                }
+            }
+            if(ures == 8){
+                db++;
+            }else {
+                ures = 0;
+            }
+        }
+        System.out.println(db + " sor teljesen ures.");
     }
 
     public void Elhelyezes(int N){
@@ -32,7 +60,7 @@ public class Tabla {
         for (int i = 0; i < N; i++) {
             int rndi = rnd.nextInt(8);
             int rndj = rnd.nextInt(8);
-            if(T[rndi][rndj] == '-'){
+            if(T[rndi][rndj] == '#'){
                 T[rndi][rndj] = 'K';
             }else{
                 i--;
@@ -62,10 +90,8 @@ public class Tabla {
     public String UresOszlop(int oszlop){
         boolean van = false;
         for (int i = 0; i < T.length; i++) {
-            for (int j = 0; j < T.length; j++) {
                 if (T[i][oszlop] == 'K'){
                     van = true;
-                }
             }
         }
 
