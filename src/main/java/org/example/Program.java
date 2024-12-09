@@ -1,7 +1,18 @@
 package org.example;
 
-public class Main {
+import org.example.F1.Tabla;
+import org.example.JatekProgram.LogikaiJatek;
+
+public class Program {
     public static void main(String[] args) {
+        //F2 PROGRAM RESZ
+
+        LogikaiJatek j1 = new LogikaiJatek(3);
+        LogikaiJatek j2 = new LogikaiJatek(10);
+
+
+        //F1 PROGRAM RESZ
+        /*
         for (int i = 0; i < 64; i++) {
 
         }
@@ -19,5 +30,6 @@ public class Main {
         System.out.println(t1.UresSor(3));
         t1.UresOszlopokSzama();
         t1.UresSorokSzama();
+         */
     }
 }
