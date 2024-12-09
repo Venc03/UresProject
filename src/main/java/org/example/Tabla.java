@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Random;
+
 public class Tabla {
     private char[][] T;
     private char UresCella;
@@ -13,6 +15,7 @@ public class Tabla {
             }
         }
 
+        Elhelyezes();
         Megjelenit();
     }
 
@@ -25,7 +28,19 @@ public class Tabla {
     }
 
     public void Elhelyezes(){
+        Random rnd = new Random();
+        int N = 5;
 
+
+        for (int i = 0; i < N; i++) {
+            int rndi = rnd.nextInt(8);
+            int rndj = rnd.nextInt(8);
+            if(T[rndi][rndj] == '-'){
+                T[rndi][rndj] = 'K';
+            }else{
+                i--;
+            }
+        }
     }
 
     public void Fajlbairas(){
