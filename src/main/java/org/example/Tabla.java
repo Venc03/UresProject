@@ -29,7 +29,7 @@ public class Tabla {
 
     public void Elhelyezes(){
         Random rnd = new Random();
-        int N = 5;
+        int N = 8;
 
 
         for (int i = 0; i < N; i++) {
