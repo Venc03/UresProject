@@ -8,7 +8,6 @@ public abstract class Jatek {
     }
 
     public void kezd() {
-
     }
 
     public void ment() {
